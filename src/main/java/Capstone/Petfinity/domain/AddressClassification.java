@@ -1,5 +1,5 @@
 package Capstone.Petfinity.domain;
 
-public classAddressClassification {
+public class AddressClassification {
     enum Seoul {Gangnamgu, Gangdonggu, Sonpagu};
 }
