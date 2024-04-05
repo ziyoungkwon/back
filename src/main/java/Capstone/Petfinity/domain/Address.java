@@ -16,6 +16,10 @@ public class Address {
     @Column(name = "address_id")
     private UUID uuid;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "address", fetch = FetchType.LAZY)
     private Parent parent;
+
+    private String region;
+
+    private String city;
 }
